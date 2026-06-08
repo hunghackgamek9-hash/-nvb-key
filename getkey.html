@@ -1,1 +1,24 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lấy Key NVB</title>
+</head>
+<body>
+
+<h2>Key NVB 24H</h2>
+
+<button onclick="taoKey()">Lấy Key</button>
+
+<p id="key"></p>
+
+<script>
+function taoKey() {
+    let key = "NVB-" + Math.random().toString(36).substring(2,10).toUpperCase();
+    document.getElementById("key").innerText = key;
+}
+</script>
+
+</body>
+</html>
